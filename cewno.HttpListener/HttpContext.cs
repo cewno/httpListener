@@ -71,7 +71,7 @@ public sealed record HttpContext : IDisposable, IAsyncDisposable
 	public void SendResponsHeaders(int responsBodyLen)
 	{
 		if (SendResponsHeadersED) return;
-		if (!SendResponsStatusCodeED) throw new HttpServerExcepiton("sb");
+		if (!SendResponsStatusCodeED) throw new HttpServerExcepiton("No response headers were sent");
 		switch (Version)
 		{
 			case HttpVersion.HTTP_1_1:
@@ -99,7 +99,7 @@ public sealed record HttpContext : IDisposable, IAsyncDisposable
 	public void SendResponsHeaders()
 	{
 		if (SendResponsHeadersED) return;
-		if (!SendResponsStatusCodeED) throw new HttpServerExcepiton("sb");
+		if (!SendResponsStatusCodeED) throw new HttpServerExcepiton("No response headers were sent");
 		switch (Version)
 		{
 			case HttpVersion.HTTP_1_1:
