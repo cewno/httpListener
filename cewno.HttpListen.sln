@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cewno.HttpListener", "cewno.HttpListener\cewno.HttpListener.csproj", "{FBDB6423-AF51-4244-A6A3-804448882849}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{99741517-0FF5-4477-825E-FF625FACDB65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBDB6423-AF51-4244-A6A3-804448882849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBDB6423-AF51-4244-A6A3-804448882849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBDB6423-AF51-4244-A6A3-804448882849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBDB6423-AF51-4244-A6A3-804448882849}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99741517-0FF5-4477-825E-FF625FACDB65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99741517-0FF5-4477-825E-FF625FACDB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99741517-0FF5-4477-825E-FF625FACDB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99741517-0FF5-4477-825E-FF625FACDB65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
