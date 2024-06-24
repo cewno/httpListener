@@ -13,9 +13,9 @@ public sealed record HttpContext : IDisposable, IAsyncDisposable
 
 	public readonly HttpConnect hc;
 
-	private bool SendResponsHeadersED = false;
+	private bool SendResponsHeadersED;
 
-	private bool SendResponsStatusCodeED = false;
+	private bool SendResponsStatusCodeED;
 
 	public HttpContext(HttpConnect hc)
 	{
@@ -89,6 +89,7 @@ public sealed record HttpContext : IDisposable, IAsyncDisposable
 				break;
 		}
 
+		SendResponsHeadersED = true;
 		Stream.wlock = false;
 	}
 
@@ -118,6 +119,8 @@ public sealed record HttpContext : IDisposable, IAsyncDisposable
 				Stream.chunked = true;
 				break;
 		}
+
+		SendResponsHeadersED = true;
 
 		Stream.wlock = false;
 	}
